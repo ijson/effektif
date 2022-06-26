@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.effektif</groupId>
     <artifactId>effektif-parent</artifactId>
-    <version>3.0.0-beta15-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>effektif-adapter-activity</artifactId>
   <packaging>jar</packaging>
@@ -16,18 +16,18 @@
 
     <!-- COMPILE DEPENDENCIES -->
 
-    <dependency> 
+    <dependency>
       <groupId>com.effektif</groupId>
       <artifactId>effektif-workflow-impl</artifactId>
-      <version>3.0.0-beta15-SNAPSHOT</version>
+      <version>4.0.0-SNAPSHOT</version>
     </dependency>
-    
+
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
       <version>4.3.6</version>
     </dependency>
-    
+
   </dependencies>
-  
+
 </project>

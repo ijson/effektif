@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.effektif</groupId>
     <artifactId>effektif-parent</artifactId>
-    <version>3.0.0-beta15-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>effektif-workflow-impl</artifactId>
   <packaging>jar</packaging>
@@ -16,12 +16,12 @@
 
     <!-- COMPILE DEPENDENCIES -->
 
-    <dependency> 
+    <dependency>
       <groupId>com.effektif</groupId>
       <artifactId>effektif-workflow-api</artifactId>
-      <version>3.0.0-beta15-SNAPSHOT</version>
+      <version>4.0.0-SNAPSHOT</version>
     </dependency>
-    
+
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
@@ -33,16 +33,16 @@
       <artifactId>jackson-databind</artifactId>
       <version>2.4.3</version>
     </dependency>
-    
+
     <dependency>
       <!-- Should be optional in case you don't use any of the mail functionality
-           But since most users need this, I want to include this as a transitive dependency.  
+           But since most users need this, I want to include this as a transitive dependency.
            If you don't want it, you can exclude it -->
       <groupId>javax.mail</groupId>
       <artifactId>mail</artifactId>
       <version>1.4.7</version>
     </dependency>
-    
+
     <dependency>
   	  <groupId>org.mozilla</groupId>
       <artifactId>rhino</artifactId>
@@ -59,7 +59,7 @@
     </dependency>
 
   </dependencies>
-  
+
   <build>
     <plugins>
       <plugin>

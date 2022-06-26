@@ -7,7 +7,7 @@
   <groupId>com.effektif</groupId>
   <artifactId>effektif-parent</artifactId>
   <packaging>pom</packaging>
-  <version>3.0.0-beta15-SNAPSHOT</version>
+  <version>4.0.0-SNAPSHOT</version>
 
   <name>Effektif parent</name>
   <description>Provides the common pom information and groups all the modules</description>
@@ -15,7 +15,7 @@
   <scm>
     <url>http://github.com/effektif/effektif</url>
   </scm>
-  
+
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
@@ -85,7 +85,7 @@
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
-  
+
   <build>
     <plugins>
       <plugin>
@@ -116,9 +116,9 @@
       </plugin>
     </plugins>
   </build>
-  
+
   <profiles>
-      <profile> 
+      <profile>
       <id>ci</id>
       <modules>
         <module>effektif-examples/cli</module>
@@ -126,15 +126,15 @@
         <module>effektif-script</module>
       </modules>
     </profile>
-    
-    <profile> 
+
+    <profile>
       <id>release</id>
       <build>
         <plugins>
           <plugin>
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.3</version>
+            <version>1.6.7</version>
             <extensions>true</extensions>
             <configuration>
               <serverId>ossrh</serverId>
@@ -156,6 +156,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.10.4</version>
             <configuration>
               <additionalparam>-Xdoclint:none</additionalparam>
             </configuration>
@@ -192,7 +193,7 @@
           <plugin>
             <groupId>com.mycila</groupId>
             <artifactId>license-maven-plugin</artifactId>
-            <version>2.5</version>
+            <version>3.0</version>
             <configuration>
               <header>files/license.header.txt</header>
               <encoding>UTF-8</encoding>
